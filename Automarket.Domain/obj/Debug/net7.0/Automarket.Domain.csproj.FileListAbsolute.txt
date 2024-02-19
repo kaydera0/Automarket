@@ -1,0 +1,13 @@
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\bin\Debug\net7.0\Automarket.Domain.deps.json
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\bin\Debug\net7.0\Automarket.Domain.dll
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\bin\Debug\net7.0\Automarket.Domain.pdb
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.AssemblyInfoInputs.cache
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.AssemblyInfo.cs
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.dll
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\refint\Automarket.Domain.dll
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.pdb
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\ref\Automarket.Domain.dll
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\bin\Debug\net7.0\Automarket.Domain.runtimeconfig.json
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.genruntimeconfig.cache

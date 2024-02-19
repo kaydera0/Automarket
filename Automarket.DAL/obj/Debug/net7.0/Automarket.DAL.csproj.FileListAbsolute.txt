@@ -1,0 +1,15 @@
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\bin\Debug\net7.0\Automarket.DAL.deps.json
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\bin\Debug\net7.0\Automarket.DAL.dll
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\bin\Debug\net7.0\Automarket.DAL.pdb
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\bin\Debug\net7.0\Automarket.Domain.dll
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\bin\Debug\net7.0\Automarket.Domain.pdb
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\Automarket.DAL.csproj.AssemblyReference.cache
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\Automarket.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\Automarket.DAL.AssemblyInfoInputs.cache
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\Automarket.DAL.AssemblyInfo.cs
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\Automarket.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\Automarket.DAL.csproj.CopyComplete
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\Automarket.DAL.dll
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\refint\Automarket.DAL.dll
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\Automarket.DAL.pdb
+C:\Users\Acer\RiderProjects\Automarket\Automarket.DAL\obj\Debug\net7.0\ref\Automarket.DAL.dll

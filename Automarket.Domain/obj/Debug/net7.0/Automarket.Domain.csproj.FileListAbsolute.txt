@@ -11,3 +11,4 @@ C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automa
 C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\ref\Automarket.Domain.dll
 C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\bin\Debug\net7.0\Automarket.Domain.runtimeconfig.json
 C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.genruntimeconfig.cache
+C:\Users\Acer\RiderProjects\Automarket\Automarket.Domain\obj\Debug\net7.0\Automarket.Domain.sourcelink.json

@@ -10,6 +10,7 @@
         "dependencies": {
           "Automarket.DAL": "1.0.0",
           "Automarket.Domain": "1.0.0",
+          "Automarket.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.15"
         },
@@ -569,6 +570,15 @@
         "runtime": {
           "Automarket.Domain.dll": {}
         }
+      },
+      "Automarket.Services/1.0.0": {
+        "dependencies": {
+          "Automarket.DAL": "1.0.0",
+          "Automarket.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Automarket.Services.dll": {}
+        }
       }
     }
   },
@@ -1004,6 +1014,11 @@
       "sha512": ""
     },
     "Automarket.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Automarket.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

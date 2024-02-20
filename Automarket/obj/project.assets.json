@@ -1079,6 +1079,20 @@
         "runtime": {
           "bin/placeholder/Automarket.Domain.dll": {}
         }
+      },
+      "Automarket.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Automarket.DAL": "1.0.0",
+          "Automarket.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Automarket.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Automarket.Services.dll": {}
+        }
       }
     }
   },
@@ -2911,12 +2925,18 @@
       "type": "project",
       "path": "../Automarket.Domain/Automarket.Domain.csproj",
       "msbuildProject": "../Automarket.Domain/Automarket.Domain.csproj"
+    },
+    "Automarket.Services/1.0.0": {
+      "type": "project",
+      "path": "../Automarket.Services/Automarket.Services.csproj",
+      "msbuildProject": "../Automarket.Services/Automarket.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Automarket.DAL >= 1.0.0",
       "Automarket.Domain >= 1.0.0",
+      "Automarket.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.15",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.15"
     ]
@@ -2959,6 +2979,9 @@
             },
             "C:\\Users\\Acer\\RiderProjects\\Automarket\\Automarket.Domain\\Automarket.Domain.csproj": {
               "projectPath": "C:\\Users\\Acer\\RiderProjects\\Automarket\\Automarket.Domain\\Automarket.Domain.csproj"
+            },
+            "C:\\Users\\Acer\\RiderProjects\\Automarket\\Automarket.Services\\Automarket.Services.csproj": {
+              "projectPath": "C:\\Users\\Acer\\RiderProjects\\Automarket\\Automarket.Services\\Automarket.Services.csproj"
             }
           }
         }

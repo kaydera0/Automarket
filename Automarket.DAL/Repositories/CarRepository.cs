@@ -32,6 +32,7 @@ public class CarRepository : ICarRepository
     // }
 
     public async Task<bool> Delete(Car entity){
+        
         _db.Car.Remove(entity);
         await _db.SaveChangesAsync();
         return true;

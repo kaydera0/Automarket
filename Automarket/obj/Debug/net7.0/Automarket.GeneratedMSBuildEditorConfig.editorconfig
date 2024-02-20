@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Acer\RiderProjects\Automarket\Automarket
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Acer/RiderProjects/Automarket/Automarket/Views/Car/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Acer/RiderProjects/Automarket/Automarket/Views/Car/GetCars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

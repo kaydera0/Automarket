@@ -4,6 +4,8 @@ using Automarket.Domain.Enum;
 using Automarket.Domain.Response;
 using Automarket.Domain.ViewModels.Car;
 using Automarket.Services.Interfaces;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Automarket.Services.Implementations;
@@ -23,8 +25,8 @@ public class CarService:ICarService
 
         try
         {
-            var cars = await _carRepository.Select();
-            if (cars.Count ==0)
+            var cars =  _carRepository.GetAll();
+            if (cars.Count() ==0)
             {
                 baseResponse.Description = " zero elements were found";
                 baseResponse.StatusCode = StatusCode.OK;
@@ -45,12 +47,13 @@ public class CarService:ICarService
         }
     }
 
-    public async Task<IBaseResponse<Car>> GetCar(int id){
+    public async Task<BaseResponse<Car>> GetCar(int id){
 
         var baseResponse = new BaseResponse<Car>();
         try
         {
-            var car = await _carRepository.Get(id);
+            // var car = await _carRepository.Get(id);
+            var car = await _carRepository.GetAll().FirstOrDefaultAsync(x=>x.Id == id);
             if (car==null)
             {
                 baseResponse.Description = "not found";
@@ -60,6 +63,7 @@ public class CarService:ICarService
             }
 
             baseResponse.Data = car;
+            baseResponse.StatusCode = StatusCode.OK;
             return baseResponse;
         }
         catch (Exception e)
@@ -71,7 +75,7 @@ public class CarService:ICarService
         }
     }
 
-    public async Task<IBaseResponse<Car>> GetCarByName(string name){
+    public async Task<BaseResponse<Car>> GetCarByName(string name){
 
         var baseResponse = new BaseResponse<Car>();
         try
@@ -97,7 +101,7 @@ public class CarService:ICarService
         }
     }
 
-    public async Task<IBaseResponse<bool>> DeleteCar(int id){
+    public async Task<BaseResponse<bool>> DeleteCar(int id){
 
         var baseResponse = new BaseResponse<bool>();
 
@@ -117,7 +121,7 @@ public class CarService:ICarService
         }
     }
 
-    public async Task<IBaseResponse<bool>> CreateCar(CarViewModel carViewModel){ //why not just a Car?
+    public async Task<BaseResponse<bool>> CreateCar(CarViewModel carViewModel){ //why not just a Car?
 
         var baseResponse = new BaseResponse<CarViewModel>();
 
@@ -148,4 +152,40 @@ public class CarService:ICarService
         }
 
     }
+
+    public async Task<BaseResponse<Car>> Edit(int id, CarViewModel model){
+
+        var baseResponse = new BaseResponse<Car>();
+
+        try
+        {
+            var car = await _carRepository.Get(id);
+            if (car==null)
+            {
+                baseResponse.StatusCode = StatusCode.CarNotFound;
+                baseResponse.Description = "Car not found";
+                return baseResponse;
+            }
+
+            car.Description = model.Description;
+            car.Model = model.Model;
+            car.Price = model.Price;
+            car.Speed = model.Speed;
+            car.DateCreate = model.DateCreate;
+            car.TypeCar = model.TypeCar;
+            car.Name = model.Name;
+
+            _carRepository.Update(car);
+
+            return baseResponse;
+        }
+        catch (Exception e)
+        {
+            return new BaseResponse<Car>(){
+                Description = $"[EDIT] {e}",
+                StatusCode = StatusCode.InternalServiceError
+            };
+        }
+    }
+
 }

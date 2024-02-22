@@ -19,7 +19,7 @@ public class HomeController : Controller{
     public async Task<IActionResult> Index(){
 
         
-        var response = await _carRepository.Select();
+        var response = await _carRepository.GetAll();
         
         return View(response);
     }

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Automarket.DAL.Repositories;
 
-public class CarRepository : ICarRepository
+public class CarRepository : IBaseRepository<Car>
 {
 
     private readonly ApplicationDbContext _db;
@@ -24,8 +24,9 @@ public class CarRepository : ICarRepository
         return await _db.Car.FirstOrDefaultAsync(x => x.Id == id);
     }
 
-    public Task<List<Car>> Select(){
-    return _db.Car.ToListAsync();
+    // public Task<List<Car>> GetAll(){
+    public IQueryable<Car> GetAll(){
+    return  _db.Car.AsQueryable();
     }
     // public IEnumerable<Car> Select(){
     //     return _db.Car.ToList();
@@ -36,6 +37,13 @@ public class CarRepository : ICarRepository
         _db.Car.Remove(entity);
         await _db.SaveChangesAsync();
         return true;
+    }
+
+    public async Task<Car> Update(Car entity){
+        _db.Car.Update(entity);
+        await _db.SaveChangesAsync();
+
+        return entity;
     }
 
     public async Task<Car> GetByName(string name){

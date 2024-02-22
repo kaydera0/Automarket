@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Automarket.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cd44a18c65aca60abbd6e15df27eb148582b5ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5179a23de6c939ffaed03ad68e4fc4128494668a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Automarket.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Automarket.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
